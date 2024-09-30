@@ -1,0 +1,252 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+.divRegLog {
+    background-color: #DDDFDF;
+    display: flex;
+    justify-content: right;
+    text-align: center;
+}
+
+.ingTop {
+    background-color: #c51d1d;
+    margin: 5px 5px;
+}
+
+.mCntTop {
+    background-color: #2377A4;
+    margin: 5px 5px;
+}
+
+
+.headerP {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 100px;
+    width: auto;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border width: 1px;
+
+}
+
+body {
+    background-color: rgb(201, 212, 221);
+}
+
+.divLogoUp {
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+
+}
+
+.logoImg {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 60px;
+}
+
+.namePag {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    margin: 5px 10px;
+    justify-content: left;
+    font-size: 30px;
+    flex: 2;
+    height: 40px;
+}
+
+
+
+.navUp {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin: 5px 20px;
+    font-size: 20px;
+    flex: 20;
+    width: auto;
+    text-transform: uppercase;
+    
+
+}
+
+.homeNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 40px;
+    height: 60px;
+    width: 150px;
+    position: relative;
+
+}
+
+.lhome {
+    color: #2377A4;
+}
+
+.lhome:after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #2377A4;
+    width: 0%; 
+    top: 40px;
+    left: 25%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.lhome:hover:after {
+    opacity: 1;
+    width: 50%; 
+
+}
+
+.newsNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 40px;
+    height: 60px;
+    width: 150px;
+    position: relative;
+}
+
+.lnews:after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #2377A4;
+    width: 0px;
+    top: 40px;
+    left: 15%;
+    opacity: 0;
+    transition: 0.3s;
+}
+.lnews:hover {
+    color: #2377A4;
+}
+
+.lnews:hover:after {
+
+    width: 70%; 
+    opacity: 1;
+
+}
+
+.lshop:after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #2377A4;
+    width: 0%; 
+    top: 40px;
+    left: 20%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.lshop:hover {
+    color: #2377A4;
+}
+
+.lshop:hover:after {
+    opacity: 1;
+    width: 60%; 
+
+}
+
+.shopNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 40px;
+    height: 60px;
+    width: 150px;
+    position: relative;
+
+}
+
+.lredes:after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #2377A4;
+    width: 0px; 
+    top: 40px;
+    left: 3%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.lredes:hover {
+    color: #2377A4;
+}
+
+.lredes:hover:after {
+    opacity: 1;
+    width: 95%; 
+
+}
+
+.rsNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 40px;
+    height: 60px;
+    width: 200px;
+    position: relative;
+
+}
+
+.lcuenta:after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #000000;
+    width: 0px; 
+    top: 40px;
+    left: 10%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.lcuenta:hover:after {
+    opacity: 1;
+    width: 80%; 
+
+}
+.accountNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 40px;
+    height: 60px;
+    width: 150px;
+    position: relative;
+    
+}
+
