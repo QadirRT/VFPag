@@ -20,16 +20,17 @@
 
     <div class="divRegLog">
 
-        <ul>
-            <div class="ingTop"><li>
+            <div class="ingTop">
+                <div class="logoLgn"><span><img width="20px" src="recursos/icons/log-in.svg" alt=""></span></div>
                 <a href="l"><span>Ingresar</span>
                 </a>
-            </li></div>
+            </div>
 
-            <div class="mCntTop"><li>
-                <a href="r"><span>Mi Cuenta</span></a>
-            </li></div>
-        </ul>
+            <div class="mCntTop">
+                <div class=".logoAccount1"><span><img width="20px" src="recursos/icons/person-circle.svg" alt=""></span></div>
+                <a href="r"><span>Mi Cuenta</span>
+                </a>
+            </div>
 
     </div>
 
@@ -37,7 +38,7 @@
     <div class="divLogoUp"><a href="index.htm">
         <img class="logoImg" src="recursos/logo2.png" alt="logoVaperFaith">
     </a></div>
-        <div class="namePag"><a href="index.htm"><span>VaperFaith</span></a></div>
+        <div class="namePag"><a href="index.htm"><h1>VaperFaith</h1></a></div>
     
     <div class="navUp"> 
         <div class="homeNav"><a class="lhome" href="a">
@@ -55,79 +56,85 @@
         <div class="accountNav"><a class="lcuenta" href="a">
             <span>Mi Cuenta</span>
         </a></div>
-    </div>
  </header>
 
-        <nav>
-           <div class="divBuscador">
-            <form action="">
-                <input placeholder="Buscar Producto" type="text">
-                <button type="submit"><span><img width="10px" src="recursos/icons/search_icon.png" alt="search"></span></button>
-            </form>
-           </div>
-        <details>
-            <summary>TODAS LAS CATEGORIAS</summary>
+        <nav class="barraNav">
+
+        <div  class="categoriasD">
+        <div class="detailsDiv">
+            <div class="summaryDiv">TODAS LAS CATEGORIAS</div>
+            
+        <div class="summaryopenDiv">
             <ul>
-                <li><a href="">
+                <li><a href=""><div class="divsumOpt">
                     <span>Recien Llegados</span>
                     <span><img src="" alt=""></span>
-                </a></li>
+                </div></a></li>
 
-                <li><a href="">
+                <li><a href=""><div class="divsumOpt">
                     <span>Dispositivos</span>
                     <span><img src="" alt=""></span>
-
+                </div></a></li>
+                
+                <div class="divdesplDisp">
                     <ul>
-                        <li><a href="">
+                        <li><a href=""><div class="divsumOpt2">
                             <span>Sistemas POD</span>
                             <span></span>
-                        </a></li>
-                        <li><a href="">
+                        </div></a></li>
+
+                        <li><a href=""><div class="divsumOpt2">
                             <span>Desechables</span>
                             <span></span>
-                        </a></li>
-                        <li><a href="">
+                        </div></a></li>
+
+                        <li><a href=""><div class="divsumOpt2">
                             <span>MODS</span>
                             <span></span>
-                        </a></li>
-                    </ul>
-                </a></li>
+                        </div></a></li>
+                    </ul></div>
 
-                <li><a href="">
+                <li><a href=""><div class="divsumOpt">
                     <span>Accesorios</span>
                     <span><img src="" alt=""></span>
-                </a></li>
+                </div></a></li>
 
-                <li><a href="">
+                <li><a href=""><div class="divsumOpt">
                     <span>Todos los Productos</span>
-                    <span><img src="" alt="">/span>
-                </a></li>
+                    <span><img src="" alt=""></span>
+                </div></a></li>
 
-                <li><a href="">
+                <li><a href=""><div class="divsumOpt">
                     <span>Encuentranos</span>
                     <span><img src="" alt=""></span>
-                </a></li>
-            </ul>
-        </details>
+                </div></a></li>
+            </ul> </div>
+        </div></div>
 
-        <div class="DivCarritoUp">
-            <span>0</span>
+        <div class="divBuscador">
+            <form action="">
+                <input size="50px" class="inputBuscador" placeholder="Buscar Producto..." type="text">
+                <button class="buttonBuscador" type="submit"><span><img width="20px" class="lupabuscar" width="15px" src="recursos/icons/search_icon.png" alt="search"></span></button>
+            </form>
+           </div>
+
+        <div class="divCarritoUp">
+            <div class="carritoCompra"><a href="shop"><span><img width="20px" src="recursos/icons/cart-outline.svg" alt="carritoCompras"></span></a></div>
+            <div class="numCarrito"><a href="shop"><span>0</span></a></div>
         </div>
         </nav>
 
-<div><h1>VaperFaith</h1></div>
-
 <section class="ProductosCatSec">
-    <h2>Categorias De Productos</h2>
-    <div><span>Accesorios</span></div>
-    <div><span>Dispositivos</span></div>
-    <div><span>Recien llegados</span></div>
-    <div><span>E-Liquids</span></div>
+    <div class="catProdh2"><div class="divimgProd"><img class="bgProd" src="" alt=""></div><h2>Categorias <br> De <br>Productos</h2></div>
+    <a href=""><div class="divcatUno"><div class="divimgCat"><img class="imagenVapo"  src="recursos/imgs/vapo1.jpg" alt=""></div><p class="pdeCat">Accesorios</p></div></a>
+    <a href=""><div class="divcatUno"><div class="divimgCat"><img class="imagenVapo"  src="recursos/imgs/vapo2.jpg" alt=""></div><p class="pdeCat">Dispositivos</p></div></a>
+    <a href=""><div class="divcatUno"><div class="divimgCat"><img class="imagenVapo" src="recursos/imgs/vapo3.jpg" alt=""></div><p class="pdeCat">Recien llegados</p></div></a>
+    <a href=""><div class="divcatUno"><div class="divimgCat"><img class="imagenVapo"  src="recursos/imgs/vapo4.jpg" alt=""></div><p class="pdeCat">E-Liquids</p></div></a>
 </section>
 
 <section class="QuienesSomosSec">
-    <h2>¿QUIENES SOMOS?</h2>
-    <p>VaperFaith es una empresa nueva e independiente que se especializa en la venta de productos para vapeo, fue creada en septiembre del 2024 con el fin de garantizar de que sus clientes obtengan la mejor calidad de productos importados y a un precio economico.</p>
+    <div class="divQs1"><h2>¿QUIENES SOMOS?</h2></div>
+    <div class="divQs2"><p>VaperFaith es una empresa nueva e independiente que se especializa en la venta de productos para vapeo, fue creada en septiembre del 2024 con el fin de garantizar de que sus clientes obtengan la mejor calidad de productos importados y a un precio economico.</p></div>
     <div class="ImgQuienesSomos"></div>
 </section>
 
@@ -190,7 +197,7 @@
 
 </section>
 
-<section>
+<section class="divReseñas">
 
     <h2>RESEÑAS DE CLIENTES</h2>
 
@@ -208,16 +215,16 @@
 
 </section>
 
-<div class="whatsappButton">
+<div>
     <a href="wa.me/+573243008745">
-        <div><span><img width="20px" src="recursos/logoRedes/logo-whatsapp.svg" alt="logoWhatsapp"></span></div>
-        <div><span>Escribenos en WSP!</span></div>
+        <div class="whatsappButton"><span><img width="40px" src="recursos/logoRedes/logo-whatsapp.svg" alt="logoWhatsapp"></span></div>
     </a>
 </div>
 
 <footer>
 
     <h3>VaperFaith 2024 está reservado.</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quam autem cupiditate eveniet, neque perspiciatis accusamus eius dignissimos! Deleniti facere officiis quaerat dignissimos sint quia corrupti aut labore ratione impedit!</p>
 
 </footer>
 
