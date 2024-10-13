@@ -1,0 +1,22 @@
+.reseñasStars input[type="radio"] {
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    display: none;
+}
+
+.reseñasStars input:before {
+    content: '\f005';
+    position: absolute;
+    font-family: fontAwesome;
+    font-size: 20px;
+    color: #111;
+    transition: .5s;
+}
+
+.reseñasStars input:hover:before,
+.reseñasStars input:checked:before{
+    color: gold;
+}

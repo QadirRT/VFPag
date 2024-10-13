@@ -4,7 +4,6 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-
     
 }
 
@@ -648,38 +647,384 @@ body {
 .AdsDiv {
     margin-top: 1065px;
     position: absolute;
-    display: flex;
     background-color: #ff8181;
     height: 350px;
     width: 100%;
+    align-items: center;
+    padding: 50px;
+    background-image: url(../recursos/backgrounds/backgroundprod.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
-.DivEncuentranos {
+.slider {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(300px * 8);
+    gap: 70px;
+
+}
+
+.slide {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    background-color:#2377A4;
+    height: 250px;
+    width: 300px;
+    align-content: center;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-200px * 4));
+        transform: translateX(calc(-200px * 4));
+    }
+
+}
+
+.divEncuentranos {
     margin-top: 1415px;
     position: absolute;
     display: flex;
-    background-color: #a18a8a;
+    background-color: #F0FFFE;
     height: 500px;
     width: 100%;
 }
+
+.divh2enc {
+    position: relative;
+    display: flex;
+    background-color: #2377A4;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    position: absolute;
+    text-transform: uppercase;
+    align-items: center;
+    border: 1px solid black;
+}
+
+
+
+.tiendaOF {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+    margin: 0;
+    top: 50px;
+    gap: 100px;
+
+}
+
+.tienda1, .tienda2 {
+    background-color: #3099FE;
+    margin: 0 10px 0 10px;
+    display: inline-block;
+    width: 400px;
+    height: 70%;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.divtienda {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+
+}
+
+.pTienda {
+    background-color: #3099FE;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.pTiendaP {
+    background-color: #F0FFFE;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    text-align: start;
+    align-items: center;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    
+}
+
+.pTiendaName {
+    display: flex;
+    background-color: #3099FE;
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2px;
+    font-weight: 800;
+
+}
+
 
 .SecFinal {
     margin-top: 1915px;
     position: absolute;
     display: flex;
-    background-color: #442f2f;
     height: 250px;
     width: 100%;
+    justify-content: center;
+    background-color: #F0FFFE;
 }
+
+.leerImp {
+    position: absolute;
+    display: flex;
+    background-color: #181818;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+    border-radius: 50px;
+
+}
+
+.leerImp ul {
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+.leerImp ul li {
+    display: inline;
+    margin-right: 100px;
+    background-color: #f0fffe;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.DivRedes {
+    width: 350px;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 50px;
+    padding: 10px;
+    border-radius: 5px;
+
+
+}
+
+.DivRedes div h2 {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+    bottom: 130px;
+    right: 50px;
+    font-size: 30px;
+    
+}
+
+.DivRedes div ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    right: 80px;
+    bottom: 20px;
+    padding: 10px;
+}
+
+
 
 .divReseñas {
     margin-top: 2165px;
     position: absolute;
     display: flex;
-    background-color: #ff8f8f;
+    background-color: #333333;
     height: 250px;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
+
+.divReseñasH2P {
+    position: absolute;
+    display: flex;
+    background-color: #333333;
+    width: 100%;
+    height: 90px;
+    padding: 5px;
+    bottom: 160px;
+    
+}
+
+.divReseñasH2 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2377A4;
+    width: 100%;
+    height: 50px;
+    left: 25%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .5),
+    inset 10px 10px 10px rgba(255, 255, 255, 0.1),
+        -10px -10px 15px rgba(255, 255, 255, .1),
+    inset -1px -1px 5px rgba(0, 0, 0, .75);
+}
+
+.divReseñasP {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C0E5FE;
+    width: 100%;
+    height: 30px;
+    top: 50px;
+    right: 25%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .5),
+    inset 7px 7px 7px rgba(255, 255, 255, 0.1),
+        -4px -4px 15px rgba(255, 255, 255, .1),
+    inset -1px -1px 5px rgba(0, 0, 0, .75);
+}
+
+.reseñas {
+    top: 90px;
+    position: absolute;
+    background-color: #333333;
+    width: 500px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reseñasStars {
+    flex-direction: row-reverse;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+    gap: 5px;
+    margin: auto;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px -5px rgb(0, 0, 0, .5),
+    inset 7px 7px 7px rgba(255, 255, 255, 0.1),
+        -4px -4px 15px rgba(255, 255, 255, .1),
+    inset -2px -2px 10px rgba(0, 0, 0, .75);
+
+}
+
+.reseñasStars input[type="radio"] {
+    display: none;
+}
+
+.reseñasStars label {
+    cursor: pointer;
+    font-size: 20px;
+    color: #111;
+    transition: .5s;
+
+}
+
+.reseñasStars label:before {
+    content: '\f005';
+    font-family: fontAwesome;
+}
+
+.reseñasStars input[type="radio"]:checked + label:before,
+.reseñasStars input[type="radio"]:checked ~ label:before {
+    color: gold;
+}
+
+.reseñasStars input[type="radio"]:checked + label:nth-child(-n + 5):before,
+.reseñasStars input[type="radio"]:checked ~ label:nth-child(-n + 5):before {
+    color: gold;
+}
+
+.reseñasStars label:hover:before,
+.reseñasStars label:hover ~ label:before {
+    color: gold;
+}
+
+
+
+.divcomentC {
+    margin-top: 10px;
+    display: flex;
+    width: 500px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.divcomentC textarea {
+    padding: 10px;
+    resize: none;
+    margin: 5px 10px 5px 10px;
+    border: 1px solid #111;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5),
+    inset 5px 5px 5px rgba(255, 255, 255, 0.1),
+    -1px -1px 5px rgba(255, 255, 255, .1),
+    inset -1px -1px 5px rgba(0, 0, 0, .75);
+    background-color: #f0fffe;
+}
+
+.divcomentC textarea:focus {
+    border: none;
+    cursor:context-menu;
+}
+
+.divcomentC input {
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 5px 5px 5px -5px rgb(0, 0, 0, .5),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.1),
+        -1px -1px 5px rgba(255, 255, 255, .1),
+    inset -1px -1px 5px rgba(0, 0, 0, .75);
+    cursor: pointer;
+    
+}
+
+
 
 .whatsappButton {
     background-color: #3099FE;
@@ -704,10 +1049,12 @@ body {
 }
 
 footer {
+    border-top: 2px solid #272727;
+    padding: 2px;
     margin-top: 2415px;
     position: absolute;
     display: flex;
-    background-color: #df2121;
+    background-color: #2377A4;
     height: 50px;
     width: 100%;
     
