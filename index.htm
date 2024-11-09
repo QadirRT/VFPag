@@ -8,6 +8,7 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <link rel="stylesheet" href="css/index.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="js/index.js"></script>
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
@@ -36,11 +37,58 @@
     </div>
 
  <header class="headerP">
-    <div class="divLogoUp"><a href="index.htm">
+    <div class="divLogoUp">
         <img class="logoImg" src="recursos/logo2.png" alt="logoVaperFaith">
-    </a></div>
+    </div>
         <div class="namePag"><a href="index.htm"><h1>VaperFaith</h1></a></div>
     
+        
+        <!-- BOTON MENU VERSION MOBILE Y TABLETS -->
+        <div class="divBtnMobile">
+            <button type="button" id="menubtnMobile">
+                <img width="40px" src="recursos/icons/menu.svg" alt="icono menu mobile">
+            </button>
+        </div>
+
+        <!--NAV VERTICAL MOBILE-->
+    <div class="divNavMobile">
+        <nav class="navVerticalMobile">
+            <div class="nameEmpresaMenuMobile"><span>EMPRESA NAME</span></div>
+            <ul>
+                <li><a href="a">
+                    <span>Recien Llegados</span>
+                    <span><img src="recursos/icons/arrow-forward-outline.svg" alt=""></span>
+                </a></li>
+                <li><a href="b">
+                    <span>Dispositivos</span>
+                    <span><img src="recursos/icons/arrow-forward-outline.svg" alt=""></span>
+                </a></li>
+                <li><a href="c">
+                    <span>Accesorios</span>
+                    <span><img src="recursos/icons/arrow-forward-outline.svg" alt=""></span>
+                </a></li>
+                <li><a href="d">
+                    <span>Tienda</span>
+                    <span><img src="recursos/icons/arrow-forward-outline.svg" alt=""></span>
+                </a></li>
+                <li><a href="e">
+                    <span>Encuentranos</span>
+                    <span><img src="recursos/icons/arrow-forward-outline.svg" alt=""></span>
+                </a></li>
+                <li><a href="f">
+                    <span>Redes Sociales</span>
+                    <span><img src="recursos/icons/arrow-forward-outline.svg" alt=""></span>
+                </a></li>
+            </ul>
+
+            <div class="AccountMenuMobile"><a href="">
+                <span><img src="recursos/icons/person-circle.svg" alt=""></span>
+                <span>Mi Cuenta</span>
+            </a></div>
+        </nav>
+    </div>
+
+
     <div class="navUp"> 
         <div class="homeNav"><a class="lhome" href="a">
             <span>Home</span>
@@ -57,6 +105,7 @@
         <div class="accountNav"><a class="lcuenta" href="a">
             <span>Mi Cuenta</span>
         </a></div>
+
  </header>
 
         <nav class="barraNav">
@@ -126,7 +175,7 @@
         </nav>
 
 <section class="ProductosCatSec">
-    <div class="catProdh2"><div class="divimgProd"><img class="bgProd" src="" alt=""></div><h2>Categorias <br> De <br>Productos</h2></div>
+    <div class="catProdh2"><div class="divimgProd"><img class="bgProd" src="" alt=""></div><h2>Categorias de Productos</h2></div>
     <a href=""><div class="divcatUno"><div class="divimgCat"><img class="imagenVapo"  src="recursos/imgs/vapo1.jpg" alt=""></div><p class="pdeCat">Accesorios</p></div></a>
     <a href=""><div class="divcatUno"><div class="divimgCat"><img class="imagenVapo"  src="recursos/imgs/vapo2.jpg" alt=""></div><p class="pdeCat">Dispositivos</p></div></a>
     <a href=""><div class="divcatUno"><div class="divimgCat"><img class="imagenVapo" src="recursos/imgs/vapo3.jpg" alt=""></div><p class="pdeCat">Recien llegados</p></div></a>
@@ -135,7 +184,7 @@
 
 <section class="QuienesSomosSec">
     <div class="divQs1"><h2>¿QUIENES SOMOS?</h2></div>
-    <div class="divQs2"><p>VaperFaith es una empresa nueva e independiente que se especializa en la venta de productos para vapeo, fue creada en septiembre del 2024 con el fin de garantizar de que sus clientes obtengan la mejor calidad de productos importados y a un precio economico.</p></div>
+    <div class="divQs2"><p><b>VaperFaith</b> es una empresa nueva e independiente que se especializa en la venta de productos para vapeo, fue creada en septiembre del 2024 con el fin de garantizar de que sus clientes obtengan la mejor calidad de productos importados y a un precio economico.</p></div>
     <div class="ImgQuienesSomos"></div>
 </section>
 
@@ -158,9 +207,9 @@
     <div class="divh2enc"><h2>Tiendas Fisicas:</h2></div>
 
     <div class="tiendaOF">
-         <div class="tienda1">
+        <div class="tienda1">
         <div class="divtienda">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.5282549316194!2d-75.56911993044864!3d6.248835132745734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442968e821c307%3A0xe1f1decc7f43020f!2sAsesor%C3%ADas%20Elkin%20Pino%20S.A.S.!5e0!3m2!1ses-419!2sco!4v1727625095858!5m2!1ses-419!2sco" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="iframeLocal" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.5282549316194!2d-75.56911993044864!3d6.248835132745734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442968e821c307%3A0xe1f1decc7f43020f!2sAsesor%C3%ADas%20Elkin%20Pino%20S.A.S.!5e0!3m2!1ses-419!2sco!4v1727625095858!5m2!1ses-419!2sco" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         <div class="pTienda">
             <div class="pTiendaName"><span>Tienda Centro</span></div>
@@ -172,7 +221,7 @@
 
         <div class="tienda2">
         <div class="divtienda">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.9384383494764!2d-75.59544667252476!3d6.279913284442187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442939d4fa3f47%3A0xe4d5d64f3e50662b!2sCra.%2088%20%2368b-2%20a%2068b-86%2C%20Palenque%2C%20Medell%C3%ADn%2C%20Robledo%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1727625373183!5m2!1ses-419!2sco" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="iframeLocal" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.9384383494764!2d-75.59544667252476!3d6.279913284442187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442939d4fa3f47%3A0xe4d5d64f3e50662b!2sCra.%2088%20%2368b-2%20a%2068b-86%2C%20Palenque%2C%20Medell%C3%ADn%2C%20Robledo%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1727625373183!5m2!1ses-419!2sco" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="pTienda">
                 <div class="pTiendaName"><span>Tienda Robledo</span></div>
@@ -191,17 +240,16 @@
 <div class="leerImp">
     <ul>
    
-    <li><a href=""><span>Politica de Privacidad</span></a></li>
-    <li><a href=""><span>Terminos & Condiciones</span></a></li>
-    <li><a href=""><span>Envios y Devoluciones</span></a></li>
+    <li><a href="c"><span>Politica de Privacidad</span></a></li>
+    <li><a href="c"><span>Terminos & Condiciones</span></a></li>
+    <li><a href="c"><span>Envios y Devoluciones</span></a></li>
     
     </ul>
 </div>
 
 <div class="DivRedes">
 
-    <div><h2>SIGUENOS EN:</h2></div>
-
+    <h2>SIGUENOS EN:</h2>
     <div>
     <ul>
         <li><a href="https://www.instagram.com/qadirpv/"><span><img width="50px" src="recursos/logoRedes/logo-instagram.svg" alt=""></span></a></li>
@@ -215,9 +263,9 @@
 
 <section class="divReseñas">
     <div class="divReseñasH2P">
-        <div class="divReseñasH2"><h2>RESEÑAS DE CLIENTES</h2></div>
-
-        <div class="divReseñasP"><p> Dejanos una reseña de como te parecio la pagina.</p></div>
+            <h2>RESEÑAS DE CLIENTES</h2>
+            <br>
+            <p> Dejanos una reseña de como te parecio la pagina.</p>
     </div>
     <div class="reseñas">
         <form action="">
@@ -242,16 +290,17 @@
 
 </section>
 
-<div>
+<div class="barraWsp">
     <a href="wa.me/+573243008745">
         <div class="whatsappButton"><span><img width="40px" src="recursos/logoRedes/logo-whatsapp.svg" alt="logoWhatsapp"></span></div>
+
     </a>
 </div>
 
 <footer>
 
     <h3>VaperFaith 2024 está reservado.</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quam autem cupiditate eveniet, neque perspiciatis accusamus eius dignissimos! Deleniti facere officiis quaerat dignissimos sint quia corrupti aut labore ratione impedit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, enim nobis a iusto sint eveniet numquam incidunt recusandae? Doloribus, vitae.</p>
 
 </footer>
 

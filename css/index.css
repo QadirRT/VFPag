@@ -4,8 +4,9 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    
 }
+
+
 
 a {
     text-decoration: none;
@@ -74,13 +75,6 @@ li {
     padding: 5px;
 
 }
-
-/*.staticDiv {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    padding-bottom: 10rem;
-} */
 
 
 .headerP {
@@ -154,7 +148,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 40px;
+    margin: 0px 0px 0px 60px;
     height: 60px;
     width: 150px;
     position: relative;
@@ -331,45 +325,33 @@ body {
     align-items: center;
     justify-content: center;
     left: 150px;
-
 }
 
 .divBuscador {
     position: relative;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;  
     align-items: center;
     height: 100%;
-    width: 500px;
-    right: 100px;
+    flex: 1; 
     padding: 5px;
-    border-radius: 10px;
-    margin: 5px;
-
-
+    margin-right: 100px;
+    margin-left: 200px;
 
 }
 
 .inputBuscador {
     height: 43px;
-    width: 80%;
-    position: absolute;
-    border-radius: 20px;
-    padding: 10px;
+    width: 80%; 
     border: 1px solid black;
-    border-end-end-radius: 0px;
-    border-start-end-radius: 0px;
-}
-
-.inputBuscador:focus {
-    outline: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 5px;
 }
 
 .buttonBuscador {
     background-color: #2c2c2c;
     padding: 10px;
-    position: relative;
-    left: 400px;
     height: 80%;
     width: 60px;
     border-radius: 20px;
@@ -377,7 +359,9 @@ body {
     border-top-left-radius: 0px;
     border: 0px solid rgb(0, 0, 0);
     transition: 0.2s;
-    
+    margin-left: -5px;
+    margin-top: -5px;
+    transform: translateY(10%);
 }
 
 .buttonBuscador:hover {
@@ -393,11 +377,9 @@ body {
 
 .divCarritoUp {
     position: relative;
-    margin: 5px;
     display: flex;
     height: 100%;
     width: 80px;
-    right: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -412,7 +394,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    position: absolute;
+    position: relative;
     z-index: 1;
     border: 1px solid #2377A4;
 
@@ -789,7 +771,7 @@ body {
     margin-top: 1915px;
     position: absolute;
     display: flex;
-    height: 250px;
+    height: 350px;
     width: 100%;
     justify-content: center;
     background-color: #F0FFFE;
@@ -872,54 +854,24 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
+    border-top-right-radius: 85px;
+    border-top-left-radius: 10px;
 }
 
 .divReseñasH2P {
-    position: absolute;
-    display: flex;
-    background-color: #333333;
+    position: relative;
     width: 100%;
     height: 90px;
-    padding: 5px;
-    bottom: 160px;
-    
-}
-
-.divReseñasH2 {
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2377A4;
-    width: 100%;
-    height: 50px;
-    left: 25%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .5),
-    inset 10px 10px 10px rgba(255, 255, 255, 0.1),
-        -10px -10px 15px rgba(255, 255, 255, .1),
-    inset -1px -1px 5px rgba(0, 0, 0, .75);
-}
-
-.divReseñasP {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #C0E5FE;
-    width: 100%;
-    height: 30px;
-    top: 50px;
-    right: 25%;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .5),
-    inset 7px 7px 7px rgba(255, 255, 255, 0.1),
-        -4px -4px 15px rgba(255, 255, 255, .1),
-    inset -1px -1px 5px rgba(0, 0, 0, .75);
+    background-color: #3099FE;
+    display: inline;
+    text-align: center;
+    bottom: 80px;
+    padding: 15px;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 1px solid black;
 }
 
 .reseñas {
@@ -1021,9 +973,7 @@ body {
         -1px -1px 5px rgba(255, 255, 255, .1),
     inset -1px -1px 5px rgba(0, 0, 0, .75);
     cursor: pointer;
-    
 }
-
 
 
 .whatsappButton {
@@ -1034,19 +984,56 @@ body {
     height: 50px;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 50px;
     margin: 10px;
     bottom: 50px;
     border: 1px solid black;
     transition: 0.5s;
+    left: 5px;
+
 }
-
-
 
 .whatsappButton:hover {
-    width: 55px;
-    height: 55px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 140px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 0px 2px 5px;
+    transition: .5;
 }
+
+.whatsappButton:hover::after {
+    content: "¡Escribenos!";
+    font-size: 14px;
+    color: #000000;
+    padding-left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+}
+
+.barraWsp {
+    position: fixed;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0px;
+    margin: 10px;
+    bottom: 45px;
+    height: 60px;
+    width: 60px;
+    left: 0px;
+    border-radius: 50px;
+    transition: .5s;
+    z-index: 10;
+}
+
 
 footer {
     border-top: 2px solid #272727;
@@ -1056,6 +1043,512 @@ footer {
     display: flex;
     background-color: #2377A4;
     height: 50px;
-    width: 100%;
+    width: 100%; 
+}
+
+
+/* MENU MOBILE*/
+.divBtnMobile button {
+    display: none;
+}
+
+.divBtnMobile {
+    display: none;
+}
+
+.divNavMobile {
+    display: none;
+}
+
+
+@media (max-width: 480px){
+
+    .divRegLog {
+
+    display: none;
+    }
+
+    .navUp {
+        display: none;
+    }
+
+    .divReseñas {
+        width: 300px;
+    }
+
+   html, body {
+    height:100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .headerP {
+        background-color: #F0FFFE;
+        display: flex;
+        height: 100px;
+        width: 100%;
+        align-items: center;
+        padding: 10px;
+        border-radius: 0px;
+        position: relative;
+        justify-content: center;
+    }
     
+    .divLogoUp {
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        
+    }
+    
+    .logoImg {
+        width: 70px;
+        height: 70px;
+    
+    }
+    
+    .namePag {
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        font-family: "Exo 2", sans-serif;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        height: 100%;
+        position: absolute;
+        margin-left: 0px;
+    }
+
+
+    .divBtnMobile button {
+        background-color: #f0fffe;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border: 2px solid black;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    .divBtnMobile {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        right: 20px;
+    }
+
+    .divLogoUp a {
+        width: 20px;
+    }
+
+    .divNavMobile {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(5px);
+        display: none;
+        
+    }
+
+    .navVerticalMobile {
+        background-color: rgba(219, 219, 219, 0.8);
+        position: relative;
+        width: 50%;
+        height: 100%;
+        filter: none;
+        flex-direction: column;
+        display: flex;
+        align-items: start;
+        justify-content: space-around;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-right: 1px solid #111;
+    }
+
+    .nameEmpresaMenuMobile {
+        background-color: #3099FE;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        top: 0;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 25px;
+        border-top-right-radius: 10px;
+        border-bottom: 1px solid #111;
+    }
+
+    .navVerticalMobile ul {
+        position: absolute;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        gap: 10px;
+        flex-direction: column;
+        top: 120px;
+    }
+
+    .navVerticalMobile ul li {
+        background-color: #3099FE;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        padding: 10px;
+        border-top: 1px solid #111;
+        border-bottom: 1px solid #111;
+    }
+
+    .navVerticalMobile ul li a span {
+        display: flex;
+        align-items: center;
+    }
+
+    .navVerticalMobile ul li a span img {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        margin-left:  10px;
+    }
+
+    .navVerticalMobile ul li a {
+        display: flex;
+
+    }
+
+    .AccountMenuMobile {
+        background-color: #3099FE;
+        display: flex;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border-bottom-right-radius: 10px;
+        border-top: 1px solid #111;
+    }
+
+    .AccountMenuMobile a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .AccountMenuMobile span {
+        display: flex;
+        align-items: center;
+    }
+
+    .AccountMenuMobile span img {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    .barraNav {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        top: 100px;
+    }
+
+    .categoriasD {
+        display: none;
+    }
+
+    .divBuscador {
+        position: relative;
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+        height: 100%;
+        flex: 1; 
+        padding: 5px;
+        margin: 0;
+        
+    }
+
+    .ProductosCatSec {
+        display: flex;
+        position: absolute;
+        margin-top: 150px;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 50px;
+        overflow-y: scroll;
+    }
+
+    .catProdh2 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        height: 150px;
+    }
+
+    .catProdh2 h2 {
+        border-bottom: 1px solid rgb(17, 17, 17, .3);
+        backdrop-filter: blur(10px);
+        height: 100px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .divcatUno {
+        position: relative;
+        background-color: #24ad3b;
+        width: 250px;
+    }
+
+    .ProductosCatSec a {
+        width: 250px;
+        height: 500px;
+        padding: 0;
+        display: flex;
+        flex: 1;
+    }
+
+    .QuienesSomosSec {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .divQs1 {
+        width: 100%;
+        height: 100px;
+    }
+
+    .divQs2 {
+        width: 100%;
+        top: 10px;
+        height: 150px;
+        padding: 5px;
+    }
+
+    .divEncuentranos {
+        width: 100%;
+        position: absolute;
+        height: 35rem;
+    }
+
+    .tiendaOF {
+        display: flex;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        gap: 20px;
+        height: 82%;
+        margin-top: 50px;
+    }
+
+    .tienda1, .tienda2 {
+        background-color: #F0FFFE;
+        height: 40%;
+        width: 65%;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tienda1 {
+        top:  30px;
+    }
+
+    .tienda2 {
+        bottom: 30px;
+    }
+
+    .iframeLocal {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+
+    .pTienda {
+        position: absolute;
+        width: 90%;
+        height: 45%;
+        display: flex;
+        margin-top: 105px;
+        border-radius: 20px;
+    }
+
+    .pTienda .pTiendaName {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .pTiendaP {
+
+        width: 100%;
+        height: 75%;
+        font-size: 11.7px;
+    
+    }
+
+    .SecFinal {
+        background-color: #F0FFFE;
+        margin-top: 1975px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .leerImp, .leerImp ul {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        width: 100%;
+        height: 2rem;
+        font-size: 15px;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .leerImp ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 2rem;
+        width: 8rem;
+        margin: 0;
+        border: 1px solid black;
+    }
+
+    .DivRedes {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .DivRedes div ul {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: space-around;
+        height: 30%;
+        width: 65%;
+        top: 75px;
+    }
+
+    .DivRedes h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 30px;
+        font-size: 200%;
+
+    }
+
+    .divReseñas {
+        background-color: #333333;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        position: absolute;
+        top: 70px;
+    }
+
+    .divReseñasH2P {
+        background-color: #ffbf0f;
+        box-shadow: 0px 1px 5px #111;
+        bottom: 105px;
+
+    }
+
+    .reseñas {
+        background-color: #333333;
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .reseñasStars {
+        position: relative;
+        display: flex;
+        bottom: 60px;
+        width: 15rem;
+        height: 70px;
+        gap: 20px;
+    }
+
+    .divcomentC {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+    }
+
+    footer {
+        background-color: #2377A4;
+        border-top: 2px solid #272727;
+        padding: 2px;
+        margin-top: 2625px;
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: 100%;
+        align-items: center;
+        
+    }
+
+    footer p {
+        margin-left: 10px;
+    }
+
+
+}
+
+@media (min-width: 481px) and (max-width:  768px) {
+
+body {
+    background-color: #ff8181;
+}
+
+
 }
